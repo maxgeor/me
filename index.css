@@ -139,3 +139,11 @@ ol, ul {
   max-width: 45ch;
   margin: 0 auto;
 }
+
+a {
+  text-decoration: none;
+  color: #7b61cc;
+}
+a:hover {
+  text-decoration: underline;
+}
