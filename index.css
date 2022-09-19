@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5 {
 
 body {
   background-color: #fafafa;
-  color: #333333;
+  color: #2b2b2b;
 }
 
 .wrapper {
@@ -142,7 +142,7 @@ ol, ul {
 
 a {
   text-decoration: none;
-  color: #7b61cc;
+  color: #5371b5;
 }
 a:hover {
   text-decoration: underline;
