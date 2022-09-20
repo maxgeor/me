@@ -1,0 +1,9 @@
+.article-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-details:first-child {
+  margin-bottom: 0.5rem;
+}
