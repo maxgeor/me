@@ -63,6 +63,7 @@ section.writing {
 section.writing > article {
   display: flex;
   align-items: baseline;
+  justify-content: center;
 }
 
 section.writing > article > *:first-child {
