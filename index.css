@@ -116,7 +116,7 @@ footer > * {
 }
 
 footer > .divider {
-  color: #909090;
+  color: #c9c9c9;
   font-size: 0.75rem;
 }
 
@@ -138,7 +138,7 @@ ol, ul {
 }
 
 .width-thin {
-  max-width: 45ch;
+  max-width: 47ch;
   margin: 0 auto;
 }
 
