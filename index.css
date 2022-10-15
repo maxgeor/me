@@ -33,7 +33,7 @@ a:hover {
 body {
   background-color: #fafafa;
   color: #282828;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -61,12 +61,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* height: 32px;
-  width: 32px; */
   height: 48px;
   width: 48px;
   margin-top: -8px;
   margin-left: -8px;
+  margin-bottom: -8px;
 }
 
 #logo {
@@ -79,7 +78,7 @@ section {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   row-gap: 1.5rem;
-  column-gap: 1.5rem;
+  column-gap: 3.5rem;
 }
 
 @media only screen and (max-width: 860px) {
@@ -96,7 +95,7 @@ section > .content {
   grid-column: span 4 / span 4;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
   max-width: 65ch;
 }
 
