@@ -33,11 +33,11 @@ a:hover {
 body {
   background-color: #fafafa;
   color: #282828;
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 808px) {
   body {
     max-width: none;
   }
@@ -51,7 +51,7 @@ body {
   padding: 3.5rem 0;
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 808px) {
   .wrapper {
     padding: 1.5rem 0;
   }
@@ -81,7 +81,7 @@ section {
   column-gap: 3.5rem;
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 808px) {
   section {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -127,7 +127,7 @@ section > .content#footer {
   margin-top: 3.5rem;
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 808px) {
   #footer {
     grid-column-start: 1;
   }
