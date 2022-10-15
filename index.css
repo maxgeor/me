@@ -99,6 +99,10 @@ section > .content {
   max-width: 65ch;
 }
 
+section > .content.articles {
+  gap: 0.5rem;
+}
+
 section > .content.articles > * {
   display: flex;
   align-items: baseline;
@@ -119,7 +123,14 @@ section > .content#footer {
 }
 
 #footer {
+  grid-column-start: 2;
   margin-top: 3.5rem;
+}
+
+@media only screen and (max-width: 860px) {
+  #footer {
+    grid-column-start: 1;
+  }
 }
 
 #footer > * {
