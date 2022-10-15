@@ -16,13 +16,13 @@ p, a {
 }
 
 h1 {
-  font-size: 24px; /* 24px */
-  line-height: 2rem; /* 32px */
+  font-size: 28px;
+  line-height: 2rem;
 }
 
 h2, h3, h4, h5 {
-  font-size: 1.5rem; /* 24px */
-  line-height: 2rem; /* 32px */
+  font-size: 25px;
+  line-height: 2rem;
 }
 
 h1, h2, h3, h4, h5 {
@@ -80,7 +80,7 @@ section.writing > article > *:first-child {
 }
 
 section.writing > article > p {
-  font-size: 0.875rem;
+  font-size: 15px;
 }
 
 article {
@@ -104,14 +104,17 @@ article > p:last-child {
 }
 
 .logo-link {
-  height: 28px;
-  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
 }
 
 
 #logo {
-  height: 28px;
-  width: 28px;
+  height: 30px;
+  width: 30px;
   color: #333333;
 }
 
@@ -125,7 +128,7 @@ footer {
 }
 
 footer > * {
-  font-size: 0.875rem;
+  font-size: 15px;
   margin-right: 0.5rem;
 }
 
@@ -139,7 +142,7 @@ footer > *:last-child {
 }
 
 .small {
-  font-size: 0.875rem;
+  font-size: 15px;
 }
 
 ol, ul {
@@ -165,10 +168,14 @@ a:hover {
   text-decoration: underline;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
 
-.mb-10 {
+.mb-14 {
   margin-bottom: 3.5rem;
 }
