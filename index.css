@@ -58,7 +58,8 @@ body {
 
 @media only screen and (max-width: 884px) {
   body {
-    max-width: 650px;
+    max-width: none;
+    /* max-width: 650px; */
   }
 }
 
