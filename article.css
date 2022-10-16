@@ -21,7 +21,7 @@ section > #article {
   display: none;
 }
 
-@media only screen and (max-width: 875px) {
+@media only screen and (max-width: 884px) {
   .article-details.show-on-small-screens {
     display: flex;
   }
@@ -31,7 +31,7 @@ section > #article {
   display: flex;
 }
 
-@media only screen and (max-width: 875px) {
+@media only screen and (max-width: 884px) {
   .article-details.show-on-big-screens {
     display: none;
   }

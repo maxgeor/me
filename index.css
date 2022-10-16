@@ -48,7 +48,7 @@ body {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 875px) {
+@media only screen and (max-width: 884px) {
   body {
     max-width: 650px;
   }
@@ -57,12 +57,12 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: 3.5rem;
+  gap: 4rem;
   margin: 0 1.5rem;
-  padding: 3.5rem 0;
+  padding: 4rem 0;
 }
 
-@media only screen and (max-width: 875px) {
+@media only screen and (max-width: 884px) {
   .wrapper {
     padding: 1.5rem 0;
   }
@@ -89,10 +89,10 @@ section {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   row-gap: 1.5rem;
-  column-gap: 3.5rem;
+  column-gap: 4rem;
 }
 
-@media only screen and (max-width: 875px) {
+@media only screen and (max-width: 884px) {
   section {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -135,10 +135,10 @@ section > .content#footer {
 
 #footer {
   grid-column-start: 2;
-  margin-top: 3.5rem;
+  margin-top: 4rem;
 }
 
-@media only screen and (max-width: 875px) {
+@media only screen and (max-width: 884px) {
   #footer {
     grid-column-start: 1;
   }
