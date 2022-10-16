@@ -14,7 +14,7 @@ section > #article {
 
 .article-details > .date {
   font-size: 0.875rem;
-  line-height: 1.5rem;
+  line-height: 1.25rem;
 }
 
 .article-details.show-on-small-screens {
