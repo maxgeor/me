@@ -87,7 +87,7 @@ body {
 
 section {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(11, minmax(0, 1fr));
   row-gap: 1.5rem;
   column-gap: 4rem;
 }
@@ -98,12 +98,12 @@ section {
   }
 }
 
-section:first-child {
-  grid-column: span 1 / span 1;
+section > div:first-child {
+  grid-column: span 2 / span 2;
 }
 
 section > .content {
-  grid-column: span 4 / span 4;
+  grid-column: span 9 / span 9;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -134,7 +134,8 @@ section > .content#footer {
 }
 
 #footer {
-  grid-column-start: 2;
+  grid-column-start: 3;
+  grid-column-end: 11;
   margin-top: 4rem;
 }
 
