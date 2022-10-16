@@ -19,12 +19,17 @@ ol, ul {
 }
 
 a {
-  text-decoration: none;
-  color: #5371b5;
+  color: inherit;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #929292;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration-color: inherit;
 }
 
 body {
