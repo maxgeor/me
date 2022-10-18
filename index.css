@@ -5,7 +5,10 @@
   font-family: 'Crimson Text', serif;
   font-size: 16px;
   line-height: 24px;
-}
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.2,0,1,1);
+  transition-duration: 200ms;
+} 
 
 h1, h2, h3, h4, h5 {
   font-style: italic;
@@ -41,12 +44,16 @@ ul li::before {
 }
 
 a {
-  text-decoration: none;
-  color: #5472b6;
+  color: inherit;
+  text-decoration-color: #949494;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #101010;
+  text-decoration-color: inherit;
+  text-decoration-thickness: 1.5px;
 }
 
 body {
@@ -59,7 +66,6 @@ body {
 @media only screen and (max-width: 884px) {
   body {
     max-width: none;
-    /* max-width: 650px; */
   }
 }
 
@@ -168,14 +174,13 @@ section > .content#footer {
 /* Utilities */
 
 .note {
+  color: #737373;
   font-size: 0.875rem;
   line-height: 1.25rem;
   padding: 2px 0;
-  font-style: italic;
 }
 
 .note > * {
   font-size: 0.875rem;
   line-height: 1.25rem;
-  font-style: italic;
 }
