@@ -47,7 +47,7 @@ a {
   text-underline-offset: 3px;
 }
 
-a:hover, a:focus {
+a:hover {
   color: #101010;
   text-decoration-color: inherit;
   text-decoration-thickness: 700px;
