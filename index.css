@@ -103,7 +103,7 @@ main {
   display: flex;
   flex-direction: column;
   width: calc(75vw - (2 * 4.5rem));
-  max-width: 825px;
+  /* max-width: 825px; */
   gap: 4.5rem;
   padding: 3.5rem 4.5rem;
 }
