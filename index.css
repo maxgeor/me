@@ -156,6 +156,14 @@ section > .content {
   gap: 1.5rem;
 }
 
+section > .content > * {
+  max-width: 65ch;
+}
+
+section > .content > div:first-child {
+  max-width: none;
+}
+
 @media only screen and (max-width: 800px) {
   section > .content {
     grid-column: span 1 / span 1;
@@ -229,6 +237,7 @@ section > .content#socials {
   font-style: italic;
   writing-mode: vertical-rl;
   text-orientation: mixed;
+  margin-top: 0.5rem;
 }
 
 footer#gifs {
@@ -258,13 +267,4 @@ footer#gifs > .gif {
 .note > * {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-/* Utilities */
-
-
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
