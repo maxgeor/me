@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="scrollToGifs.js" async></script>
 </head>
 
 <body>
@@ -17,12 +18,18 @@
     <div class="wrapper">
       <section>
         <div>
-          <a href="./index.html" class="logo-link">
-            <img id="logo" src="./bloopy.svg" alt="Logo">
-          </a>
+          <div class="flex-center">
+            <a href="./index.html" class="logo-link">
+              <img id="logo" src="./bloopy.svg" alt="Logo">
+            </a>
+            <a id="scroll-to-gifs" class="show-on-small-screens">Gifs below ↓</a>
+          </div>
         </div>
         <div class="content">
-          <h1>Max Georgopoulos</h1>
+          <div class="flex-center">
+            <h1>Max Georgopoulos</h1>
+            <a id="scroll-to-gifs" class="show-on-big-screens">Gifs below ↓</a>
+          </div>
           <p>I'm a designer doing full-stack development at <a href="https://www.joinwavy.com/" target="_blank">Wavy</a>.</p>
           <p>I believe that the boundary between designing and engineering is artificial — you get the best results by blending the two.</p>
           <p>Lately, I've been inspired by <a target="_blank" href="https://feltpresence.com/">Ryan Singer</a>, <a target="_blank" href="https://tailwindcss.com/">TailwindCSS</a>, and the <a href="https://www.isseymiyake.com/en/brands/hommeplisse" target="_blank">2023 Spring Summer Collection from Homme Plissé</a>.</p>
@@ -85,10 +92,10 @@
       </section>
     </div>
     <div id="monolith">
-      <p>this is my take on the golden ratio (1.503759). i find it much more... balanced ...... did i mention i'm a designer? well, enjoy, there there gifs at the end</p>
+      <p>this is my take on the golden ratio (a clean 1.3333). i find it much more... balanced ...... did i mention i'm a designer? well, enjoy, there there gifs at the end</p>
     </div>
   </main>
-  <footer>
+  <footer id="gifs">
     <img class="gif" src="gifs/goovin-dog-dude.gif" alt="Heeeeeeeeeeyyyyy duuuuuuuuude whaaaaat's cooookin in Guy Fiery's Kitchin?" />
     <img class="gif" src="gifs/its-spaghette.gif" alt="It's spooghete! hehehe" />
     <img class="gif" src="gifs/oh-my.gif" alt="classic" />
