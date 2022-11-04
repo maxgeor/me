@@ -42,15 +42,12 @@ ul li::before {
 }
 
 a {
-  color: inherit;
-  text-decoration-color: #949494;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
+  text-decoration: none;
+  color: #5472b6;
 }
 
 a:hover {
-  color: #101010;
-  text-decoration-color: inherit;
+  text-decoration: underline;
 }
 
 .wrapper {
@@ -149,14 +146,14 @@ section > .content#socials {
   gap: 0;
 }
 
-#socials, #gifs {
+#socials {
   grid-column-start: 2;
   grid-column-end: 7;
   margin-top: 4.5rem;
 }
 
 @media only screen and (max-width: 800px) {
-  #socials, #gifs {
+  #socials {
     grid-column-start: 1;
     grid-column-end: 1;
   }
@@ -166,28 +163,9 @@ section > .content#socials {
   font-size: 0.875rem;
 }
 
-#gifs {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 0.75rem;
-}
-
-#gifs > .gif {
-  height: 72px;
-}
-
-#gifs > p {
-  color: #737373;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-style: italic;
-}
-
 .note {
-  color: #737373;
   font-size: 0.875rem;
+  font-style: italic;
   line-height: 1.25rem;
   padding: 2px 0;
 }
