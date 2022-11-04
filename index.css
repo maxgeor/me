@@ -44,12 +44,6 @@ ul li::before {
   margin-left: -1.125em;
 }
 
-/* a {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: 0.5px;
-  text-underline-offset: 4px;
-} */
 a {
   text-decoration: none;
   color: #5472b6;
