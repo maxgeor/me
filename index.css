@@ -55,8 +55,10 @@ ul li::before {
 a {
   color: #f0fffd;
   text-decoration: underline;
-  text-decoration-color: #aec7c4;
-  text-decoration-thickness: 1px;
+  text-decoration-color: inherit;
+  text-decoration-thickness: 0.5px;
+/*   text-decoration-color: #aec7c4;
+  text-decoration-thickness: 1px; */
   text-underline-offset: 4px;
 }
 
