@@ -8,7 +8,15 @@
   scroll-behavior: smooth;
 }
 
+body {
+  color: #c7dcda;
+  background-color: #497874;
+/*   color: #222;
+  background-color: #fafafa; */
+}
+
 h1, h2, h3, h4, h5 {
+  color: #f0fffd;
   font-style: italic;
   font-weight: 400;
 }
@@ -45,12 +53,15 @@ ul li::before {
 }
 
 a {
-  text-decoration: none;
-  color: #5472b6;
+  color: #f0fffd;
+  text-decoration: underline;
+  text-decoration-color: #aec7c4;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 a:hover {
-  text-decoration: underline;
+  opacity: 70%;
 }
 
 .wrapper {
@@ -83,7 +94,6 @@ a:hover {
 #logo {
   height: 26px;
   width: 26px;
-  color: #333333;
 }
 
 section {
@@ -99,7 +109,7 @@ section {
   }
 }
 
-section > div:first-child {
+section > div:first-child, div:last-child  {
   grid-column: span 1 / span 1;
 }
 
@@ -174,4 +184,9 @@ section > .content#socials {
 .note > * {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.coming-soon-badge {
+  font-size: 0.75rem;
+  margin-left: 4px;
 }
