@@ -9,14 +9,16 @@
 }
 
 body {
-  color: #c7dcda;
-  background-color: #497874;
-/*   color: #222;
-  background-color: #fafafa; */
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 75ms;
+  color: #dddded;
+  background-color: #5f5c93;
 }
 
 h1, h2, h3, h4, h5 {
-  color: #f0fffd;
+  color: #f7f7fd;
+  opacity: 100%;
   font-style: italic;
   font-weight: 400;
 }
@@ -53,17 +55,15 @@ ul li::before {
 }
 
 a {
-  color: #f0fffd;
+  color: #f7f7fd;
   text-decoration: underline;
-  text-decoration-color: inherit;
-  text-decoration-thickness: 0.5px;
-/*   text-decoration-color: #aec7c4;
-  text-decoration-thickness: 1px; */
+  text-decoration-thickness: 1px;
+  text-decoration-color: #c7c7dc;
   text-underline-offset: 4px;
 }
 
 a:hover {
-  opacity: 70%;
+  opacity: 75%;
 }
 
 .wrapper {
@@ -71,7 +71,7 @@ a:hover {
   flex-direction: column;
   max-width: 825px;
   margin: 0 auto;
-  gap: 3.5rem;
+  gap: 5rem;
   padding: 3.5rem;
 }
 
@@ -86,16 +86,33 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 48px;
-  width: 48px;
-  margin-top: -8px;
-  margin-left: -11px;
-  margin-bottom: -8px;
+  width: 44px;
+  height: 44px;
+  margin-top: -4px;
+  margin-left: -2px;
+}
+
+@media only screen and (max-width: 500px) {
+  logo-link {
+    height: 40px;
+    width: 40px;
+    margin: 0;
+  }
 }
 
 #logo {
-  height: 26px;
-  width: 26px;
+  margin-bottom: -1px;
+  height: 42px;
+  width: 42px;
+  opacity: 91%;
+  margin-bottom: -8px;
+}
+
+@media only screen and (max-width: 500px) {
+  #logo {
+    height: 38px;
+    width: 38px;
+  }
 }
 
 section {
@@ -109,6 +126,10 @@ section {
   section {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+}
+
+section > div:first-child  {
+  color: #f7f7fd;
 }
 
 section > div:first-child, div:last-child  {
@@ -162,7 +183,7 @@ section > .content#socials {
 #socials {
   grid-column-start: 2;
   grid-column-end: 7;
-  margin-top: 3.5rem;
+  margin-top: 5rem;
 }
 
 @media only screen and (max-width: 800px) {
