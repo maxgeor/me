@@ -12,12 +12,11 @@ body {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 75ms;
-  color: #dddded;
-  background-color: #5f5c93;
+  color: #3a3027;
+  background-color: #ede6e3;
 }
 
 h1, h2, h3, h4, h5 {
-  color: #f7f7fd;
   opacity: 100%;
   font-style: italic;
   font-weight: 400;
@@ -55,15 +54,15 @@ ul li::before {
 }
 
 a {
-  color: #f7f7fd;
+  color: inherit;
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-decoration-color: #c7c7dc;
+  text-decoration-color: inherit;
   text-underline-offset: 4px;
 }
 
 a:hover {
-  opacity: 75%;
+  text-decoration-color: inherit;
 }
 
 .wrapper {
@@ -84,35 +83,47 @@ a:hover {
 
 .logo-link {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  margin-top: -4px;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  margin-top: -2px;
   margin-left: -2px;
 }
 
-@media only screen and (max-width: 500px) {
-  logo-link {
-    height: 40px;
-    width: 40px;
-    margin: 0;
-  }
-}
-
 #logo {
+  height: 29px;
+  width: 29px;
   margin-bottom: -1px;
-  height: 42px;
-  width: 42px;
-  opacity: 91%;
-  margin-bottom: -8px;
+  margin-top: -2px;
+  opacity: 93%;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   #logo {
-    height: 38px;
-    width: 38px;
+    height: 29px;
+    width: 29px;
+    margin-top: 0;
+    margin-bottom: -6px;
+    margin-left: -2px;
   }
+}
+
+#signature-title {
+  height: 32px;
+  width: auto;
+  margin-left: -2px;
+}
+
+.signature-name {
+  height: 34px !important;
+  margin-bottom: -6px !important;
+}
+
+.signature-subtitle {
+  height: 16px;
+  width: fit-content;
+  opacity: 98%;
 }
 
 section {
@@ -128,9 +139,9 @@ section {
   }
 }
 
-section > div:first-child  {
+/* section > div:first-child  {
   color: #f7f7fd;
-}
+} */
 
 section > div:first-child, div:last-child  {
   grid-column: span 1 / span 1;
@@ -140,6 +151,8 @@ section > .content {
   grid-column: span 5 / span 5;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 1.25rem;
 }
 
