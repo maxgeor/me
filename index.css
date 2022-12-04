@@ -1,43 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Serif+Khojki:wght@400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
-
 * {
   margin: 0;
   scroll-behavior: smooth;
 }
 
 html {
-  color: #222;
-  background-color: #e6e6e6;
+  color: #2c2921;
+  background-color: #e6e5e0;
+  font-family: "Times", serif;
 }
 
 body {
   font-size: 14px;
   line-height: 20px;
-  font-family: 'Crimson Text', serif;
-/*   font-family: Times, serif; */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  gap: 60px;
+  padding: 20px 40px 40px 40px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    padding: 20px;
+    max-width: none;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-style: italic;
   font-weight: 400;
-/*   text-transform: uppercase; */
-/*   letter-spacing: 0.06em; */
-  font-family: 'Crimson Text', serif;
 }
 
-h1 {
-  font-size: 24.19px;
-  line-height: 28px;
+.name-container {
+  background-color:#2c2921;
+  color:#e6e5e0;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-style: italic;
+  width: 100%;
+  margin-bottom: 8px;
+  padding-left: 14px;
+  margin-left: -14px;
 }
 
-h2, h3 {
-  font-size: 20.16px;
-  line-height: 24px;
+@media only screen and (max-width: 800px) {
+  .name-container {
+    padding-left: 20px;
+    margin-left: -20px;
+  }
 }
 
-h4, h5, h6 {
-  font-size: 16.8px;
-  line-height: 20px;
+h1.name {
+  font-size: 14px;
+  line-height: 32px;
+}
+
+
+h2, h3, h4, h5, h6 {
+  font-size: 14px;
+  line-height: 32px;
 }
 
 ol, ul {
@@ -71,29 +96,6 @@ a {
   text-decoration-thickness: 1px;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-/*   margin: 0 auto; */
-  gap: 64px;
-  padding: 32px 40px;
-}
-
-@media only screen and (max-width: 800px) {
-  .wrapper {
-    padding: 20px;
-    padding-top: 24px;
-    max-width: none;
-  }
-}
-
-a.box {
-  height: 20px;
-  width: 20px;
-  background-color: #000;
-}
-
 tr {
   vertical-align: top;
 }
@@ -108,83 +110,71 @@ tr > td:first-child {
   white-space: nowrap;
 }
 
-/* .cols {
-  display: grid;
-  grid-template-columns: 2;
-  grid-gap: 64px;
-} */
-
 section {
+  border-top: 0.5px #2c2921 solid;
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 12px;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin-top: 64px;
-  gap: 4px;
+section:first-of-type {
+  border-top: none;
 }
 
 section > .content {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 4px;
+  max-width: 450px;
 }
 
-section > .content > * {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-}
-
-section > .content > * {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-}
-
-section > .content.articles > * {
-  gap: 0 6px;
-}
-
-section > .content.articles > * > p.date {
-  font-size: 0.675rem;
-  line-height: 1.25rem;
-}
-
-section > .thoughts {
+section > .content.articles,
+section > .content.thoughts {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-section > .thoughts > * {
+section > .content.articles > * {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0 6px;
+}
+
+section > .content.articles > * > p.date {
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.mini {
+  font-size: 10px;
+  line-height: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 60px;
+  width: 100%;
+}
+
+footer > div.content {
+  display: flex;
   flex-direction: column;
+  align-items: start;
+  gap: 4px;
 }
 
-section > .thoughts > * > p.date {
-  font-size: 0.675rem;
-  line-height: 1.25rem;
+#logo {
+  height: 36px;
+  width: 36px;
+  margin-right: -8px;
+  margin-bottom: -4px;
 }
 
-.coming-soon {
-  font-size: 11.2px;
-  line-height: 16px;
-}
-
-.pronounciation {
-  font-style: italic;
-  font-size: 11.2px;
-  line-height: 24px;
-  margin-bottom: 4px;
-}
-
-.pronounciation > span {
-  font-size: 8px;
-  line-height: 16px;
+@media only screen and (max-width: 800px) {
+  #logo {
+    height: 32px;
+    width: 32px;
+  }
 }
