@@ -26,6 +26,7 @@ body {
 @media only screen and (max-width: 800px) {
   .wrapper {
     padding: 20px;
+    padding-top: 12px;
     max-width: none;
   }
 }
@@ -42,14 +43,14 @@ h1, h2, h3, h4, h5, h6 {
   gap: 8px;
   font-style: italic;
   width: 100%;
-  margin-bottom: 8px;
-  padding-left: 14px;
+  margin-bottom: 4px;
+  padding: 0 14px;
   margin-left: -14px;
 }
 
 @media only screen and (max-width: 800px) {
   .name-container {
-    padding-left: 20px;
+    padding: 0 20px;
     margin-left: -20px;
   }
 }
